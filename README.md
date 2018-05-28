@@ -22,7 +22,7 @@ Simple hotel booking application
 - For now it's a console application
 - Start the console using `rails c`
 
-#### Partner API
+### Partner API
 1. Partner Sign Up:
 ```ruby
 Partner.partner_sign_up(name: 'Miyako Hotel Los Angeles', email: 'miyako@test.com')
@@ -59,7 +59,7 @@ RoomRate.add_room_rates(partner_id: 1, room_id: 1, start_date: '2018-06-01', end
 => This method will be invoked after partner adds rate: `RoomRateAverage.calculate_and_update_average_cost(inventory_id: 1)`
 
 
-#### Guest API
+### Guest API
 1. User Sign Up:
 ```ruby
 User.user_sign_up(email: 'ketan@test.com’)
