@@ -29,8 +29,8 @@ Partner.partner_sign_up(name: 'Miyako Hotel Los Angeles', email: 'miyako@test.co
 Partner.partner_sign_up(name: 'Hampton Inn & Suites Thousand Oaks', email: 'hampton@test.com')
 ```
 
-=> Sample response:
 ```ruby
+=> Sample response:
 {:err=>nil, :err_msg=>{}, :partner=> partner_object}
 {:err=>"err1", :err_msg=>{:email=>["Email must be given"]}, :partner=>nil}
 ```
@@ -40,8 +40,8 @@ Partner.partner_sign_up(name: 'Hampton Inn & Suites Thousand Oaks', email: 'hamp
 Room.add_room(room_type: '2 full­size beds with a private bath', occupancy: 2, partner_id: 1, total_quantity: 5)
 ```
 
-=> Sample response:
 ```ruby
+=> Sample response:
 {:err=>nil, :err_msg=>{}, :room=>room object, :inventory=>inventory object}
 ```
 
@@ -70,8 +70,8 @@ User.user_sign_up(email: 'ketan@test.com’)
 Room.get_availability(room_id: 1, move_in_date: '2018-05-28', move_out_date: '2018-06-30')
 ```
 
-=> Sample response:
 ```ruby
+=> Sample response:
 {
     :err=>nil,
     :search_result=>[
@@ -86,7 +86,7 @@ Room.get_availability(room_id: 1, move_in_date: '2018-05-28', move_out_date: '20
 Booking.book_room(:user_id => 1, :inventory_id => 4, move_in_date: '2018-05-28', move_out_date: '2018-06-30', booking_quantity: 1)
 ```
 
-=> Sample response:
 ```ruby
+=> Sample response:
 {:err=>nil, :booking=>booking object}
 ```
