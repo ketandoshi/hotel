@@ -5,7 +5,6 @@ Simple hotel booking application
 ## Requirements
 - Ruby 2.4
 - Rails 5
-- MongoDB 3.6.2
 
 ## Setup
 #### MySQL
